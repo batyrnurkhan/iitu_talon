@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'psycopg2',
 ]
 
 MIDDLEWARE = [
@@ -76,12 +75,8 @@ WSGI_APPLICATION = 'iitu_talon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'iitu_talon',
-        'USER': 'postgres',
-        'PASSWORD': 'batyr123',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
