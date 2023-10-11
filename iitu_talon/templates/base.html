@@ -1,0 +1,19 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+</head>
+<body>
+    <nav>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'user_login' %}">Login</a>
+        <a href="{% url 'profile' %}">Profile</a>
+        <!-- Add other navigation links as needed -->
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
